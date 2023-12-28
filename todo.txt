@@ -1,0 +1,2 @@
+* add auto fetch loop mode
+* add telegram/discord bot mode maybe?
