@@ -46,6 +46,9 @@ fn main() {
         println!("> HTTP Response: {}", response.as_str().unwrap());
     }
 
+    // Fake wait time :p
+    std::thread::sleep(std::time::Duration::from_secs(1));
+
     // Print the result
     println!(" ");
     println!("> Successfully fetched the player {}", username);

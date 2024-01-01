@@ -4,4 +4,4 @@ A dead simple CLI program to update your [Valorant Tracker](https://tracker.gg/v
 ### [Click here to Download](https://github.com/omerakgoz34/valo-tracker-fetcher/releases/latest)
 
 ### How to set player username
-![ss1](./screenshots/add_env_var.png)
+![add_env_var](./screenshots/add_env_var.png)
