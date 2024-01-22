@@ -8,19 +8,18 @@ authors = ["omerakgoz34 <omerakgoz34@gmail.com>"]
 
 [profile.release]
 debug = false
-strip = true
-opt-level = 3
 incremental = false
+opt-level = 3
 codegen-units = 1
-# lto = true
-# panic = "abort"
+panic = "abort"
+strip = true
 
 [profile.release.package."*"]
 debug = false
-strip = true
-opt-level = 3
 incremental = false
+opt-level = 3
 codegen-units = 1
+strip = true
 
 [dependencies]
 minreq = { version = "^2.3", features = ["https-native"] }
