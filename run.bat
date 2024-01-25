@@ -1,1 +1,1 @@
-go run . -v -ldflags=""
+go run -v -ldflags="" .

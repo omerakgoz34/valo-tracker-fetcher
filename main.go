@@ -6,13 +6,12 @@ import (
 	"os"
 	"strconv"
 	"strings"
-	"time"
 )
 
-var AppName string = "valo-tracker-fetcher"
-var AppVersion string = "0.2.0"
-var UsernameKeyName string = "VALO-TRACKER-FETCHER_USERNAME"
-var TrackerURL string = "https://tracker.gg/valorant/profile/riot/"
+const AppName string = "valo-tracker-fetcher"
+const AppVersion string = "0.2.1"
+const UsernameKeyName string = "VALO-TRACKER-FETCHER_USERNAME"
+const TrackerURL string = "https://tracker.gg/valorant/profile/riot/"
 
 func main() {
 	fmt.Println("# " + AppName + " v" + AppVersion + " @ github.com/omerakgoz34/" + AppName)
@@ -29,7 +28,6 @@ func main() {
 	// Fetch the player
 	fmt.Println("")
 	fmt.Println("> Fetching player " + username + " ...")
-	time.Sleep(1 * time.Second) // Fake wait time :p
 	resp, err := http.Get(TrackerURL + strings.ReplaceAll(username, "#", "%23"))
 
 	// Check for errors

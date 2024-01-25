@@ -1,1 +1,1 @@
-go build -v -ldflags="-s -extldflags -static"
+go build -v -ldflags="-w -s" && upx -5 --lzma valo-tracker-fetcher*
